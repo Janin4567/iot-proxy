@@ -10,7 +10,7 @@ app.use(express.json());
 
 app.post('/api/devices', async (req, res) => {
   try {
-    const response = await fetch('http://18.205.3.201/api/devices', {
+    const response = await fetch('http://13.218.163.127/api/devices', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(req.body),
